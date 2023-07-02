@@ -1,0 +1,110 @@
+body {
+    background-color: #FEEEED;
+    min-height: 80px;
+}
+
+#chat-title {
+    z-index: 9999;
+    background-color: #E73275;
+    color: white;
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#top-space {
+    height: 30px;
+}
+
+#message-list {
+    height: auto;
+}
+
+#bottom-space {
+    height: 50px;
+}
+
+#text-form {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#message {
+    resize: none;
+    width: 90%;
+    word-wrap: normal;
+}
+
+#submit-button {
+    background: #E73275;
+    color: white;
+}
+
+.balloon-012 {
+    display: grid;
+    gap: 1em 0;
+    padding: 25px 15px;
+    /* background-color: #769ece; */
+}
+
+.balloon-012__section {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.balloon-012__img {
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+}
+
+.balloon-012__p {
+    display: inline-block;
+    position: relative;
+    max-width: 80%;
+    margin: 0;
+    padding: .4em .8em;
+    border-radius: 20px;
+    color: #000000;
+    font-size: .9em;
+}
+
+.balloon-012__p.left {
+    background-color: 	#F6ADC6;
+}
+
+.balloon-012__p.right {
+    background-color: white;
+    margin: 0 10px 0 auto;
+}
+
+.balloon-012__p::before {
+    position: absolute;
+    top: -15px;
+    width: 20px;
+    height: 30px;
+    content: '';
+}
+
+.balloon-012__p.left::before {
+    left: -10px;
+    border-radius: 0 0 0 15px;
+    box-shadow: -3px -15px 0 -7px 	#F6ADC6 inset;
+}
+
+.balloon-012__p.right::before {
+    right: -10px;
+    border-radius: 0 0 15px 0;
+    box-shadow: 3px -15px 0 -7px white inset;
+}
